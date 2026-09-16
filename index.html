@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Max Love Editing | Sermon clips for churches</title>
+<meta name="description" content="Short, captioned sermon clips cut from the service your church already streams - ready for Instagram, Facebook and YouTube Shorts by Tuesday. Get a free clip from last Sunday.">
+<link rel="canonical" href="https://maxloveediting.com/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://maxloveediting.com/">
+<meta property="og:title" content="Sunday's sermon, carried into the week">
+<meta property="og:description" content="Captioned sermon clips from the service you already stream, delivered by Tuesday. Get a free clip from last Sunday.">
+<meta name="theme-color" content="#1f4d3a">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<style>html,body{margin:0}img{max-width:100%}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital@0;1&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root {
+  --paper: #f5f7f3;
+  --sheet: #ffffff;
+  --ink: #18221e;
+  --muted: #56645d;
+  --rule: #d3dbd5;
+  --green: #1f4d3a;
+  --green-ink: #f3f6f2;
+  --green-soft: #e4ece6;
+  --gilt: #9c7a2c;
+  --gilt-bright: #d9b45a;
+  --track: #dfe6e1;
+  --phone: #13251d;
+  --phone-ink: #f4f7f3;
+  --shadow: 0 1px 2px rgba(20, 40, 30, .06), 0 12px 32px -12px rgba(20, 40, 30, .18);
+
+  --display: "Libre Caslon Display", "Libre Caslon Text", "Iowan Old Style", Georgia, serif;
+  --serif: "Libre Caslon Text", "Iowan Old Style", Georgia, serif;
+  --sans: "Public Sans", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0f1613;
+    --sheet: #16211c;
+    --ink: #e7eee9;
+    --muted: #9fb0a7;
+    --rule: #2a3a33;
+    --green: #6fae8e;
+    --green-ink: #0d1612;
+    --green-soft: #1b2b24;
+    --gilt: #d6b25e;
+    --gilt-bright: #e6c877;
+    --track: #24332c;
+    --phone: #0a130f;
+    --phone-ink: #eef3ef;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 14px 36px -14px rgba(0, 0, 0, .6);
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0f1613;
+  --sheet: #16211c;
+  --ink: #e7eee9;
+  --muted: #9fb0a7;
+  --rule: #2a3a33;
+  --green: #6fae8e;
+  --green-ink: #0d1612;
+  --green-soft: #1b2b24;
+  --gilt: #d6b25e;
+  --gilt-bright: #e6c877;
+  --track: #24332c;
+  --phone: #0a130f;
+  --phone-ink: #eef3ef;
+  --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 14px 36px -14px rgba(0, 0, 0, .6);
+}
+
+* { box-sizing: border-box; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font: 400 17px/1.6 var(--sans);
+  padding-inline: clamp(16px, 4vw, 40px);
+  padding-block: 0 48px;
+  -webkit-font-smoothing: antialiased;
+}
+.page { max-width: 1120px; margin-inline: auto; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--gilt); outline-offset: 3px; border-radius: 4px; }
+
+.label {
+  font: 600 12px/1.2 var(--sans);
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--gilt);
+}
+.mono { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+
+/* ---------- header ---------- */
+.top {
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  padding-block: 22px;
+  border-bottom: 1px solid var(--rule);
+}
+.mark { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; text-decoration: none; }
+.mark b { font: 400 22px/1 var(--display); letter-spacing: .01em; }
+.mark span { font: italic 15px/1 var(--serif); color: var(--muted); }
+.top a.ask { font: 600 15px/1 var(--sans); color: var(--green); text-underline-offset: 4px; }
+
+/* ---------- hero ---------- */
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  gap: clamp(28px, 5vw, 64px);
+  align-items: center;
+  padding-block: clamp(36px, 6vw, 72px) clamp(40px, 6vw, 80px);
+}
+h1 {
+  font: 400 clamp(40px, 6.2vw, 68px)/1.02 var(--display);
+  letter-spacing: -.01em;
+  margin: 14px 0 20px;
+  text-wrap: balance;
+}
+h1 em { font-family: var(--serif); font-style: italic; color: var(--green); }
+.lede { font-size: clamp(18px, 1.9vw, 20px); color: var(--muted); max-width: 32em; margin: 0 0 28px; }
+.actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 22px; }
+.btn {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: var(--green); color: var(--green-ink);
+  font: 600 16px/1 var(--sans);
+  padding: 16px 22px; border-radius: 999px; text-decoration: none;
+  box-shadow: var(--shadow);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.btn:hover { transform: translateY(-1px); }
+.btn svg { width: 18px; height: 18px; }
+.quiet { font-weight: 600; color: var(--ink); text-underline-offset: 4px; }
+.fine { margin: 18px 0 0; font-size: 14px; color: var(--muted); }
+
+/* ---------- service sheet (hero visual) ---------- */
+.sheet {
+  background: var(--sheet);
+  border: 1px solid var(--rule);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  padding: clamp(18px, 2.4vw, 26px);
+}
+.sheet-head {
+  display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap;
+  padding-bottom: 14px; border-bottom: 1px solid var(--rule);
+}
+.sheet-head .t { font: 400 20px/1.2 var(--display); }
+.sheet-head .m { font: 400 13px/1 var(--mono); color: var(--muted); }
+
+.timeline { position: relative; margin: 26px 0 8px; }
+.track { position: relative; height: 12px; border-radius: 6px; background: var(--track); }
+.seg {
+  position: absolute; top: -3px; bottom: -3px;
+  min-width: 6px; border-radius: 4px;
+  background: var(--gilt-bright);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--gilt-bright) 30%, transparent);
+  transform-origin: center;
+}
+.ticks { position: relative; height: 22px; margin-top: 8px; font: 400 11px/1 var(--mono); color: var(--muted); }
+.ticks span { position: absolute; top: 0; transform: translateX(-50%); }
+.ticks span:first-child { transform: none; }
+.ticks span:last-child { transform: translateX(-100%); }
+
+.clips {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(10px, 1.6vw, 16px);
+  margin-top: 14px;
+}
+.clip { display: flex; flex-direction: column; gap: 8px; }
+.phone {
+  aspect-ratio: 9 / 16; max-width: 100%;
+  border-radius: 16px;
+  background:
+    radial-gradient(120% 70% at 50% 18%, color-mix(in srgb, var(--green) 55%, var(--phone)) 0%, var(--phone) 70%);
+  color: var(--phone-ink);
+  border: 1px solid color-mix(in srgb, var(--phone-ink) 12%, transparent);
+  position: relative; overflow: hidden;
+  display: flex; flex-direction: column; justify-content: flex-end;
+  padding: 12px 10px 16px;
+}
+.phone::before {           /* the speaker, a pulpit silhouette in the upper frame */
+  content: ""; position: absolute; left: 50%; top: 20%;
+  width: 34%; aspect-ratio: 1; border-radius: 50%;
+  transform: translateX(-50%);
+  background: color-mix(in srgb, var(--phone-ink) 16%, transparent);
+  box-shadow: 0 64px 0 18px color-mix(in srgb, var(--phone-ink) 10%, transparent);
+}
+.phone .cap {
+  position: relative;
+  font: 700 clamp(11px, 1.25vw, 14px)/1.25 var(--sans);
+  text-transform: uppercase; letter-spacing: .02em;
+  text-align: center; text-wrap: balance;
+}
+.phone .cap i { font-style: normal; color: var(--gilt-bright); }
+.phone .ref {
+  position: relative; margin-top: 8px; text-align: center;
+  font: 400 10px/1 var(--mono); opacity: .7;
+}
+.clip .when { font: 500 12px/1.3 var(--mono); color: var(--muted); font-variant-numeric: tabular-nums; }
+.clip .when b { color: var(--ink); font-weight: 500; }
+.example { margin: 16px 0 0; font: italic 13px/1.4 var(--serif); color: var(--muted); }
+
+/* ---------- sections ---------- */
+section { padding-block: clamp(40px, 6vw, 72px); border-top: 1px solid var(--rule); }
+h2 {
+  font: 400 clamp(30px, 3.8vw, 44px)/1.1 var(--display);
+  margin: 10px 0 0; text-wrap: balance; max-width: 18em;
+}
+.intro { color: var(--muted); max-width: 36em; margin: 14px 0 0; }
+
+.steps {
+  list-style: none; padding: 0; margin: 36px 0 0;
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(20px, 3vw, 40px);
+}
+.steps li { display: grid; grid-template-columns: auto 1fr; gap: 4px 16px; align-items: baseline; }
+.steps .n { grid-row: span 2; font: 400 56px/.8 var(--display); color: var(--gilt); }
+.steps h3 { margin: 0; font: 600 18px/1.3 var(--sans); }
+.steps p { margin: 0; color: var(--muted); font-size: 16px; }
+
+/* order-of-worship list with dot leaders */
+.order { margin: 32px 0 0; padding: 0; list-style: none; max-width: 760px; }
+.order li {
+  display: flex; align-items: baseline; gap: 10px;
+  padding-block: 12px;
+}
+.order .what { font: 400 21px/1.3 var(--serif); white-space: nowrap; }
+.order .dots { flex: 1; min-width: 24px; border-bottom: 2px dotted var(--rule); transform: translateY(-5px); }
+.order .detail { color: var(--muted); text-align: right; font-size: 16px; max-width: 22em; }
+
+.care {
+  list-style: none; padding: 0; margin: 32px 0 0;
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 44px;
+}
+.care li { display: grid; grid-template-columns: 22px 1fr; gap: 12px; align-items: start; }
+.care svg { width: 22px; height: 22px; color: var(--green); margin-top: 3px; }
+.care b { display: block; font-weight: 600; }
+.care span { color: var(--muted); font-size: 16px; }
+
+.faq { margin: 28px 0 0; max-width: 760px; }
+details { border-bottom: 1px solid var(--rule); }
+summary {
+  cursor: pointer; list-style: none;
+  display: flex; justify-content: space-between; align-items: center; gap: 16px;
+  padding-block: 18px; font: 600 18px/1.35 var(--sans);
+}
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "+"; font: 400 26px/1 var(--display); color: var(--gilt); transition: transform .2s ease; }
+details[open] summary::after { transform: rotate(45deg); }
+details p { margin: 0 0 18px; color: var(--muted); max-width: 40em; }
+
+.about {
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(24px, 5vw, 64px); align-items: start;
+}
+.about p { margin: 14px 0 0; max-width: 32em; }
+.contact {
+  background: var(--green-soft); border-radius: 16px; padding: clamp(22px, 3vw, 32px);
+  display: flex; flex-direction: column; gap: 14px;
+}
+.contact .big { font: 400 clamp(26px, 3vw, 34px)/1.15 var(--display); margin: 0; text-wrap: balance; }
+.contact .lines { display: flex; flex-direction: column; gap: 6px; font-size: 16px; }
+.contact .lines a { font-weight: 600; text-underline-offset: 4px; }
+
+footer {
+  border-top: 1px solid var(--rule); padding-top: 22px;
+  display: flex; flex-wrap: wrap; gap: 8px 22px; justify-content: space-between;
+  font-size: 14px; color: var(--muted);
+}
+
+/* ---------- motion: everything is visible at rest; motion only settles it ---------- */
+@media (prefers-reduced-motion: no-preference) {
+  .seg { animation: mark 900ms cubic-bezier(.2, .7, .2, 1) both; }
+  .seg:nth-child(2) { animation-delay: 150ms; }
+  .seg:nth-child(3) { animation-delay: 300ms; }
+  .clip { animation: lift 700ms cubic-bezier(.2, .7, .2, 1) both; }
+  .clip:nth-child(2) { animation-delay: 120ms; }
+  .clip:nth-child(3) { animation-delay: 240ms; }
+  .reveal { transition: transform 700ms cubic-bezier(.2, .7, .2, 1); }
+  .reveal.low { transform: translateY(18px); }
+}
+@keyframes mark { from { transform: scaleX(.2); } to { transform: none; } }
+@keyframes lift { from { transform: translateY(14px); } to { transform: none; } }
+
+/* ---------- narrow ---------- */
+@media (max-width: 860px) {
+  .hero, .about { grid-template-columns: 1fr; }
+  .steps { grid-template-columns: 1fr; }
+  .care { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  .order li { flex-wrap: wrap; gap: 2px 10px; }
+  .order .dots { display: none; }
+  .order .detail { text-align: left; flex-basis: 100%; }
+  .top a.ask { display: none; }
+}
+</style>
+
+</head>
+<body>
+<div class="page">
+  <header class="top">
+    <a class="mark" href="#top" id="top-link"><b>Max Love Editing</b><span>for churches</span></a>
+    <a class="ask" href="mailto:maxhlove@gmail.com?subject=A%20free%20clip%20from%20last%20Sunday&amp;body=Our%20livestream%20or%20YouTube%20channel%3A%20">Get a free clip</a>
+  </header>
+
+  <main id="top">
+    <div class="hero">
+      <div>
+        <div class="label">Sermon clips &middot; in your inbox by Tuesday</div>
+        <h1>Sunday&rsquo;s sermon, <em>carried into the week.</em></h1>
+        <p class="lede">I take the service you already stream and cut the thirty-to-sixty-second moments people actually share &mdash; captioned, vertical, and ready for Instagram, Facebook and YouTube Shorts.</p>
+        <div class="actions">
+          <a class="btn" id="cta-hero" href="mailto:maxhlove@gmail.com?subject=A%20free%20clip%20from%20last%20Sunday&amp;body=Our%20livestream%20or%20YouTube%20channel%3A%20">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
+            Get a free clip from last Sunday
+          </a>
+          <a class="quiet" href="#how">How it works</a>
+        </div>
+        <p class="fine">Cut from your own service. No call, nothing to sign.</p>
+      </div>
+
+      <figure class="sheet" aria-label="Example: three clips cut from a 38-minute sermon">
+        <div class="sheet-head">
+          <span class="t">Sunday Worship &middot; Psalm 46</span>
+          <span class="m">sermon 38:12</span>
+        </div>
+
+        <div class="timeline" aria-hidden="true">
+          <!-- one scale: position = seconds / 2292 -->
+          <div class="track">
+            <span class="seg" style="left:11.26%; width:1.92%"></span>
+            <span class="seg" style="left:46.25%; width:2.23%"></span>
+            <span class="seg" style="left:81.41%; width:1.61%"></span>
+          </div>
+          <div class="ticks">
+            <span style="left:0">0:00</span>
+            <span style="left:26.18%">10:00</span>
+            <span style="left:52.36%">20:00</span>
+            <span style="left:78.53%">30:00</span>
+            <span style="left:100%">38:12</span>
+          </div>
+        </div>
+
+        <div class="clips">
+          <div class="clip">
+            <div class="phone"><div class="cap">Be <i>still,</i> and know that I am God</div><div class="ref">Psalm 46:10</div></div>
+            <div class="when"><b>4:18</b> &rarr; 5:02 &middot; 44s</div>
+          </div>
+          <div class="clip">
+            <div class="phone"><div class="cap">A very present <i>help</i> in trouble</div><div class="ref">Psalm 46:1</div></div>
+            <div class="when"><b>17:40</b> &rarr; 18:31 &middot; 51s</div>
+          </div>
+          <div class="clip">
+            <div class="phone"><div class="cap">The Lord of hosts is <i>with us</i></div><div class="ref">Psalm 46:7</div></div>
+            <div class="when"><b>31:06</b> &rarr; 31:43 &middot; 37s</div>
+          </div>
+        </div>
+        <figcaption class="example">Example layout. Your clips are cut from your own pastor&rsquo;s words, from your own Sunday.</figcaption>
+      </figure>
+    </div>
+
+    <section id="how" class="reveal">
+      <div class="label">How it works</div>
+      <h2>Three steps, and you only do the first one.</h2>
+      <ol class="steps">
+        <li><span class="n">1</span><h3>Send your livestream link</h3><p>YouTube, Facebook or your website &mdash; wherever the service already goes up. Nothing new to install or learn.</p></li>
+        <li><span class="n">2</span><h3>I cut what&rsquo;s worth sharing</h3><p>I watch the whole service and pull the moments that stand on their own: a line of scripture, a story, the turn in the sermon.</p></li>
+        <li><span class="n">3</span><h3>Clips arrive by Tuesday</h3><p>Captioned and ready to post, with a suggested caption for each, in time for the week ahead.</p></li>
+      </ol>
+    </section>
+
+    <section class="reveal">
+      <div class="label">Each week</div>
+      <h2>What lands in your inbox</h2>
+      <ul class="order">
+        <li><span class="what">Sermon clips</span><span class="dots"></span><span class="detail">thirty to sixty seconds, captioned, vertical</span></li>
+        <li><span class="what">Every service</span><span class="dots"></span><span class="detail">Sunday morning, evening and midweek, if you stream them</span></li>
+        <li><span class="what">Titles &amp; descriptions</span><span class="dots"></span><span class="detail">written for your Sunday upload</span></li>
+        <li><span class="what">Chapters</span><span class="dots"></span><span class="detail">so viewers can jump straight to the sermon</span></li>
+        <li><span class="what">Full transcript</span><span class="dots"></span><span class="detail">of every service, searchable</span></li>
+      </ul>
+    </section>
+
+    <section class="reveal">
+      <div class="label">Handled with care</div>
+      <h2>A church&rsquo;s service isn&rsquo;t content like any other.</h2>
+      <ul class="care">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><div><b>Prayer time stays private</b><span>Prayer requests, and anyone named from the congregation, are never clipped.</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><div><b>Your pastor is never cut off</b><span>Every cut lands in a pause, so no clip starts or ends in the middle of a word.</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><div><b>Scripture read right</b><span>Captions are checked against what was actually said, references included.</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><div><b>Only your words</b><span>Nothing is added to the message or rewritten. The sermon is the content.</span></div></li>
+      </ul>
+    </section>
+
+    <section class="reveal">
+      <div class="label">Questions</div>
+      <h2>Before you write</h2>
+      <div class="faq">
+        <details id="faq-cost"><summary>What does it cost?</summary><p>A simple monthly rate with no contract, and you can stop any time. Ask, and I&rsquo;ll send this month&rsquo;s rate along with your free clip, so you can judge the work before the price.</p></details>
+        <details id="faq-do"><summary>Does anyone at the church need to do anything?</summary><p>Only send the link to where your service is posted. There&rsquo;s nothing to film differently, no software, and no meetings &mdash; everything happens by email.</p></details>
+        <details id="faq-choose"><summary>Can we choose which moments get clipped?</summary><p>Yes. Tell me a moment you want, a series you&rsquo;re in, or anything to leave out, and the clips follow that.</p></details>
+        <details id="faq-post"><summary>Do you post them for us?</summary><p>The clips come to you ready to post, with a suggested caption for each, so your church stays in control of its own pages.</p></details>
+      </div>
+    </section>
+
+    <section class="about reveal">
+      <div>
+        <div class="label">Who you&rsquo;re working with</div>
+        <h2>I&rsquo;m Max Love.</h2>
+        <p>Max Love Editing is me, in Los Angeles, cutting clips for churches across the country. I watch every service through before anything is cut, and every clip start to finish before it&rsquo;s sent.</p>
+        <p>Everything runs over email, which tends to suit busy church offices better than another call on the calendar.</p>
+      </div>
+      <div class="contact">
+        <p class="big">Send me last Sunday&rsquo;s link, and I&rsquo;ll send a clip back.</p>
+        <a class="btn" id="cta-contact" href="mailto:maxhlove@gmail.com?subject=A%20free%20clip%20from%20last%20Sunday&amp;body=Our%20livestream%20or%20YouTube%20channel%3A%20">Get a free clip</a>
+        <div class="lines">
+          <a href="mailto:maxhlove@gmail.com">maxhlove@gmail.com</a>
+          <a class="mono" href="tel:+13109681995">(310) 968-1995</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Max Love Editing &middot; Los Angeles</span>
+    <span>No calls &middot; nothing to sign &middot; stop any time</span>
+  </footer>
+</div>
+
+<script>
+(() => {
+  const els = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const vh = window.innerHeight;
+  els.forEach(el => { if (el.getBoundingClientRect().top > vh) el.classList.add('low'); });
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.remove('low'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -8% 0px' });
+  els.forEach(el => io.observe(el));
+})();
+</script>
+
+</body>
+</html>
